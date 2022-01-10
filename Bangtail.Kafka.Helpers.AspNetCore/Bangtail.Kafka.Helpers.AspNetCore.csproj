@@ -4,9 +4,12 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <Description>Helpers for Confluent's .NET Kafka packages</Description>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
     <PackageId>Bangtail.Kafka.Helpers</PackageId>
     <PackageProjectUrl>https://github.com/dnewell1986/bangtail-kafka-helpers/</PackageProjectUrl>
-    <PackageIconUrl>https://github.com/dnewell1986/bangtail-kafka-helpers/blob/main/bangtail.jpg</PackageIconUrl>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageIcon>bangtail.jpg</PackageIcon>
     <Title>Bangtail.Kafka.Helpers</Title>
     <Version>1.0.0-alphav1</Version>
     <Authors>Dominic Newell</Authors>
@@ -21,6 +24,8 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+    <None Include="..\bangtail.jpg" Pack="true" PackagePath="\" />
+    <None Include="..\LICENSE.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
